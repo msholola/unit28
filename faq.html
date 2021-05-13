@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<metacharset="utf-8">
+<title>Untitled Document</title>
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+	<img src="images/fake news logo.png" width="150" alt"Fake news logo image"/>
+	<h1> Fake News</h1>
+	</header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact-us.html">Contact Us</a></li>
+
+</ul>
+
+</nav><!--end of navigation-->
+
+<div id="hero">
+
+
+</div><!--end of hero image-->
+
+<h2>FAQ</h2>
+
+ 
+
+<button class="accordion">What is the purpose of this website?</button>
+<div class="panel">
+  <p>The purpose of this website is to create awareness of fake news, for young people to ensure that they know the difference between real and fake news.</p>
+</div>
+
+ 
+
+<button class="accordion">What to do if I find a fake news website?</button>
+<div class="panel">
+  <p>Contact the website and report this issue.</p>
+</div>
+
+ 
+
+<button class="accordion">What is the best way to spread information about fake news so that others can be aware?</button>
+<div class="panel">
+  <p>You can share this website to those who need to be aware of it, so that they have knowlege of it.</p>
+</div>
+
+ 
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+ 
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
